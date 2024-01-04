@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/Wallpaper_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/wallpaper"
+        android:scaleType="fitXY">
+    </ImageView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:padding="6dp">
+        <ImageButton
+            android:id="@+id/SetWallpaper_bt"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_set"
+            android:backgroundTint="#5C555353">
+        </ImageButton>
+        <ImageButton
+            android:id="@+id/DownloadWallpaper_bt"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_download"
+            android:backgroundTint="#5C555353">
+        </ImageButton>
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/loadingPB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

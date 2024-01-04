@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetDownloadWallpaperActivity">
+    <ImageView
+        android:id="@+id/Download_wallpaper_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/wallpaper"
+        android:scaleType="fitXY">
+    </ImageView>
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/loadingPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Download_set_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SET WALLPAPER"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:layout_gravity="bottom"
+        android:backgroundTint="#5C555353"
+        app:cornerRadius="10dp">
+    </com.google.android.material.button.MaterialButton>
+</FrameLayout>
